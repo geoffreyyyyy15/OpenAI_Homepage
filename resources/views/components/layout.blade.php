@@ -11,7 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap" rel="stylesheet">
     <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="shortcut icon" href="{{ asset('images/chat.ico') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
     {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> --}}
+
+    <script>
+      tailwind.config = {
+        theme: {
+         screens: {
+            'default': '0px',
+            'xs': '350px',
+            'sm': '640px',
+            'md': '768px',
+            'lg': '1024px',
+            'xl': '1280px',
+            '2xl': '1536px',
+          },
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
 
 </head>
 <body class="bg-black">
